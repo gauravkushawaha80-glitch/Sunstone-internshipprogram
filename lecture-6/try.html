@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anime Card Slider</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f5f5f5;
+        }
+
+        .container {
+            width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* LEFT IMAGE STACK */
+
+        .image-box {
+            position: relative;
+            width: 500px;
+            height: 500px;
+        }
+
+        .card {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 420px;
+            height: 220px;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card1 {
+            top: 0;
+            width: 320px;
+            opacity: 0.25;
+            filter: grayscale(100%);
+        }
+
+        .card2 {
+            top: 90px;
+            width: 380px;
+            opacity: 0.45;
+            filter: grayscale(100%);
+        }
+
+        .card3 {
+            top: 180px;
+            z-index: 5;
+        }
+
+        .card4 {
+            top: 330px;
+            width: 380px;
+            opacity: 0.45;
+            filter: grayscale(100%);
+        }
+
+        .card5 {
+            top: 430px;
+            width: 320px;
+            opacity: 0.25;
+            filter: grayscale(100%);
+        }
+
+        /* RIGHT CONTENT */
+
+        .content {
+            width: 450px;
+            text-align: center;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .btn {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            border: none;
+            background: #4f6dff;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #1638a0;
+            font-size: 50px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .line {
+            width: 100%;
+            height: 2px;
+            background: #1638a0;
+            margin: 10px 0;
+            position: relative;
+        }
+
+        .job {
+            color: #999;
+            letter-spacing: 5px;
+            font-size: 22px;
+        }
+
+        /* DOTS */
+
+        .dots {
+            margin-top: 70px;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #d0d0d0;
+        }
+
+        .dot.active {
+            background: #1638a0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- LEFT SIDE -->
+        <div class="image-box">
+
+            <div class="card card1">
+                <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?q=80&w=1200&auto=format&fit=crop"
+                    alt="">
+            </div>
+
+            <div class="card card2">
+                <img src="https://images.unsplash.com/photo-1521119989659-a83eee488004?q=80&w=1200&auto=format&fit=crop"
+                    alt="">
+            </div>
+
+            <div class="card card3">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop"
+                    alt="">
+            </div>
+
+            <div class="card card4">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1200&auto=format&fit=crop"
+                    alt="">
+            </div>
+
+            <div class="card card5">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop"
+                    alt="">
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="content">
+
+            <div class="buttons">
+                <button class="btn">↑</button>
+                <button class="btn">↓</button>
+            </div>
+
+            <h1>Luffy kun</h1>
+
+            <div class="line"></div>
+
+            <p class="job">MARKETING MANAGER</p>
+
+            <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot active"></span>
+                <span class="dot"></span>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

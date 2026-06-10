@@ -1,0 +1,8 @@
+.card{
+    transition: 1s;
+
+}
+.card:hover{ 
+transition:rotate(180geg);
+background-color: blue;
+}

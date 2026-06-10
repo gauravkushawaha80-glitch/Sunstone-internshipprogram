@@ -1,0 +1,13 @@
+button:hover{
+    background-color: aquamarine;
+    transition:backgroun 2s;
+}
+div:hover{
+    border:1px black;
+    background-color: bisque;
+    width: 200px;
+    height: 500px;
+   
+    transition-duration: 5s;
+
+}

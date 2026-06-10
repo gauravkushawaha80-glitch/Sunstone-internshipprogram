@@ -1,0 +1,18 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vp;
+}
+.box{
+    transition:2s;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    transform:scale(1.2);
+    background-color: blueviolet;
+}

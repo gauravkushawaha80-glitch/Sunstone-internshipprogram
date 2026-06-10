@@ -1,0 +1,10 @@
+.left{
+    float: left;
+    weight:auto ;
+}
+.list{
+    list-style-image: url("./icons8-stars.gif");
+    padding: 200px;
+    border:1px saddlebrown;
+    color: aquamarine;
+}
