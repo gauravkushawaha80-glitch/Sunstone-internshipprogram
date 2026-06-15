@@ -1,0 +1,11 @@
+const products = [
+  { name: "Laptop", price: 50000 },
+  { name: "Phone", price: 20000 },
+  { name: "Tablet", price: 15000 }
+];
+
+const prices = products.map(p => p.price);
+console.log(prices); // [50000, 20000, 15000]
+
+const highestPrice = Math.max(...prices);
+console.log(highestPrice);
