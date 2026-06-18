@@ -79,12 +79,13 @@ let obj4={
 let merged={
     ...bj3,...ojj4
 };
-console.log(merged);let student={
+console.log(merged);
+let studentm={
     name:"naman",
     age:24,
     city:"Delhi",
 };
-console.log(student);
+console.log(studentm);
 
 // dot notation
 console.log(student.name);
@@ -104,7 +105,7 @@ console.log(student);
 delete student.phone;
 console.log(student);
 
-let obj={
+let objx={
     name:"A",
     greet(){
         console.log("hello");
@@ -116,7 +117,7 @@ for(key in student){
     console.log(key,student[key]);
 }
 
-let person={
+let personm={
     name:"Arpan",
     age:20,
     address:{
@@ -127,11 +128,11 @@ let person={
 };
 console.log(person);
 
-let array=[a={name:"a"},b={name:"b"},c={name:"c"}];
-console.log(array);
+let arrayn=[a={name:"a"},b={name:"b"},c={name:"c"}];
+console.log(arrayn);
 console.log(person.address.city);
 console.log(person["address"]["city"]);
-console.log(array[0].name);
+console.log(arrayn[0].name);
 
 let name1="naman";
 console.log("Hello "+name1+"eiuhki") ;
