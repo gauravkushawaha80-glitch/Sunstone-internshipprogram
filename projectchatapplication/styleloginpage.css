@@ -17,7 +17,6 @@ body{
     position:relative;
 }
 
-/* Background circles */
 body::before{
     content:"";
     position:absolute;
@@ -29,18 +28,8 @@ body::before{
     right:-100px;
 }
 
-body::after{
-    content:"";
-    position:absolute;
-    width:500px;
-    height:500px;
-    border-radius:50%;
-    background:rgba(0,0,0,0.08);
-    bottom:-250px;
-    left:-200px;
-}
 
-/* Main Container */
+
 
 .container{
     width:1150px;
@@ -52,7 +41,7 @@ body::after{
     box-shadow:0 20px 40px rgba(0,0,0,0.25);
 }
 
-/* Decorative Shapes */
+
 
 .shape{
     position:absolute;
@@ -107,7 +96,7 @@ body::after{
     right:-20px;
 }
 
-/* Login Card */
+
 
 .login-box{
     position:absolute;
@@ -124,9 +113,12 @@ body::after{
     color:#fff;
 }
 
-.logo{
-    font-size:18px;
-    font-weight:600;
+img{
+     width:60px;
+    height:60px;
+    border-radius:20%;
+    object-fit:cover;
+    
 }
 
 .login-box h1{
