@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="indexstyle.css">
+    
+</head>
+<body>
+<script src="script.js"></script>
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-message"></i>
+        </div>
+
+        <div class="menu">
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-regular fa-message active"></i>
+            <i class="fa-solid fa-user-group"></i>
+            <i class="fa-solid fa-user-plus"></i>
+            <i class="fa-solid fa-gear"></i>
+        </div>
+
+        <div class="bottom">
+            <i class="fa-regular fa-moon"></i>
+
+            <img src="https://i.pravatar.cc/50?img=11">
+        </div>
+
+    </div>
+
+    <!-- Chat List -->
+    <div class="chat-list">
+
+        <h2>Chats</h2>
+
+        <div class="search-box">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="Search messages or users">
+        </div>
+
+        <!-- Stories -->
+        <div class="stories">
+
+            <div class="story">
+                <img src="https://i.pravatar.cc/70?img=1">
+                <span>Patrick</span>
+            </div>
+
+            <div class="story">
+                <img src="https://i.pravatar.cc/70?img=5">
+                <span>Doris</span>
+            </div>
+
+            <div class="story">
+                <img src="https://i.pravatar.cc/70?img=10">
+                <span>Emily</span>
+            </div>
+
+            <div class="story">
+                <img src="https://i.pravatar.cc/70?img=15">
+                <span>Steve</span>
+            </div>
+
+        </div>
+
+        <h3>Recent</h3>
+
+        <div class="contact active-contact">
+            <img src="https://i.pravatar.cc/60?img=5">
+
+            <div class="info">
+                <h4>Doris Brown</h4>
+                <p>Nice to meet you</p>
+            </div>
+
+            <span>10:12 AM</span>
+        </div>
+
+        <div class="contact">
+            <img src="https://i.pravatar.cc/60?img=12">
+
+            <div class="info">
+                <h4>Patrick Hendricks</h4>
+                <p>Hey! there I'm available</p>
+            </div>
+
+            <span>05 min</span>
+        </div>
+
+        <div class="contact">
+            <img src="https://i.pravatar.cc/60?img=18">
+
+            <div class="info">
+                <h4>Mark Messer</h4>
+                <p>Images</p>
+            </div>
+
+            <span>12 min</span>
+        </div>
+
+        <div class="contact">
+            <img src="https://i.pravatar.cc/60?img=20">
+
+            <div class="info">
+                <h4>Steve Walker</h4>
+                <p>Admin-A.zip</p>
+            </div>
+
+            <span>03:20 PM</span>
+        </div>
+
+    </div>
+
+    <!-- Chat Area -->
+    <div class="chat-area">
+
+        <div class="top-bar">
+
+            <div class="user">
+
+                <img src="https://i.pravatar.cc/50?img=5">
+
+                <div>
+                    <h3>Doris Brown</h3>
+                    <small>Online</small>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="messages">
+
+            <div class="message right">
+                Good morning
+                <span>10:00</span>
+            </div>
+
+            <div class="message left">
+                Hello 👋
+                <span>10:02</span>
+            </div>
+
+            <div class="message right">
+                Yeah everything is fine
+                <span>10:05</span>
+            </div>
+
+            <div class="message right">
+                & Next meeting tomorrow 10.00AM
+                <span>10:05</span>
+            </div>
+
+            <div class="gallery">
+
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43?w=400">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400">
+
+            </div>
+
+        </div>
+
+        <!-- Input -->
+        <div class="input-box">
+
+            <input type="text" placeholder="Enter Message...">
+
+            <button>
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
